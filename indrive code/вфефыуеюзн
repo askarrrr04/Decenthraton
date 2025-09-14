@@ -1,0 +1,27 @@
+from ultralytics import YOLO
+
+if __name__ == "__main__":
+    # Путь к yaml датасета для определения грязности
+    data_path = r"C:\Users\askar\Downloads\inDrive\inDrive\dirt finding.v3i.yolov8\data.yaml"
+
+    # Модель среднего размера для детекции
+    model = YOLO("yolov8m.pt")  # средняя модель
+
+    model.train(
+        data=data_path,
+        epochs=100,
+        imgsz=640,      # средний размер, чтобы VRAM использовалась эффективно
+        batch=8,        # увеличенный batch, если VRAM позволяет
+        device=0,       # GPU
+        half=True,      # fp16 ускоряет обучение на GPU
+        project="runs/train",
+        name="car_dirt_m",
+        save=True,
+        augment=True
+    )
+
+
+# Пути к весам
+state_model_path = r"C:\Users\askar\Desktop\indrive code\runs\detect\train\weights\best.pt"   # удары/царапины
+parts_model_path = r"C:\Users\askar\Desktop\indrive code\runs\segment\train4\weights\best.pt"   # детали машины
+dirt_model_path  = r"C:\Users\askar\Desktop\indrive code\runs\train\car_dirt_m2\weights\best.pt"  # грязь
