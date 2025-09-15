@@ -148,10 +148,10 @@ curl -X POST http://localhost:8080/upload \
 - **Magzhan Shynykul** — Data analytic, Presentation and Design  
 
 ## Запуск сервиса
--npm install
--npm run dev
+  -npm install
+  -npm run dev
 -Команды для Frontend
 
--go mod tidy
--go run main.go 
+  -go mod tidy
+  -go run main.go 
 -Команды для Backend
