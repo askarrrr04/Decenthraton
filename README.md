@@ -78,6 +78,7 @@ AI Models
 Loss (box losses) ≤ 0.7.
 
 Самая точная модель в проекте.
+<img width="686" height="454" alt="image (5)" src="https://github.com/user-attachments/assets/7cec4937-6f5f-40f3-88a9-1db47e61fcc2" />
 
 2. Dirt Detection (Чистая/грязная)
 Задача: определять, является ли машина чистой или грязной.
@@ -92,6 +93,7 @@ Loss также ≤ 0.7.
 Работает совместно с первой моделью.
 
 Результаты удовлетворительные, Loss ≤ 0.7.
+![photo_2025-09-15_14-14-04](https://github.com/user-attachments/assets/13e33d55-e80e-40f7-ae60-734f932e9923)
 
 Используется для отображения повреждений на 3D-модели автомобиля.
 
@@ -108,6 +110,7 @@ Frontend
 список повреждений и дефектов,
 
 статус "чистая / грязная".
+<img width="786" height="757" alt="Снимок экрана 2025-09-15 141621" src="https://github.com/user-attachments/assets/0bed93d9-f2b1-402c-bdc6-043970c7523a" />
 
 3D-модель автомобиля
 Для визуализации результатов интегрирована 3D-модель автомобиля:
@@ -117,6 +120,7 @@ Frontend
 Использована библиотека Three.js (React Three Fiber) для рендера и взаимодействия с WebGL.
 
 Пользователь может вращать модель и рассматривать повреждения.
+![photo_2025-09-15_14-13-13](https://github.com/user-attachments/assets/8b8be868-a147-47ce-93db-2e57caf66bf7)
 
 Технологии фронтенда
 React — фреймворк.
@@ -128,16 +132,19 @@ Axios / Fetch API — отправка запросов на бэкенд.
 Three.js / React Three Fiber — работа с 3D-моделью.
 
 Стек технологий
-Backend: Go (Gin), FastAPI (Python), YOLOv8 (PyTorch)
+Backend: Go (Gin), FastAPI (Python), YOLOv8l (PyTorch)
 
 Frontend: React, Three.js (React Three Fiber)
 
 Dataset: 16 000+ изображений с разметкой
 
 Команда проекта
-Syrym Serikbay – [роль/функция]
+Nurdaulet Khaimuldin - [Go Backend]
 
-Askar Bakeyev – [роль/функция]
+Askar Bakeyev – [AI Engineer]
 
-Darkhan Akhmet – [роль/функция]
+Zhaniya Zhakipova – [Frontend, 3D]
+
+Magzhan Shynykul - [Data analytic, Presentation and Design]
+
 
