@@ -146,3 +146,12 @@ curl -X POST http://localhost:8080/upload \
 - **Askar Bakeyev** — AI Engineer  
 - **Zhaniya Zhakipova** — Frontend, 3D  
 - **Magzhan Shynykul** — Data analytic, Presentation and Design  
+
+## Запуск сервиса
+npm install
+npm run dev
+Команды для Frontend
+
+go mod tidy
+go run main.go 
+Команды для Backend
